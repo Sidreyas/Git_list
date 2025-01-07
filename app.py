@@ -263,7 +263,7 @@ if "page" not in st.session_state:
     st.session_state.page = "Login"
 
 if st.session_state.page == "Login":
-    st.title("GitHub Leaderboard - Login")
+    st.title("Git Leaderboard - Login")
     username = st.text_input("Username")
     password = st.text_input("Password", type="password")
 
@@ -280,7 +280,7 @@ if st.session_state.page == "Login":
         st.session_state.page = "Sign Up"
 
 elif st.session_state.page == "Sign Up":
-    st.title("GitHub Leaderboard - Sign Up")
+    st.title("Git Leaderboard - Sign Up")
     github_url = st.text_input("GitHub URL")
     password = st.text_input("Password", type="password")
 
@@ -299,7 +299,7 @@ elif st.session_state.page == "Sign Up":
         st.session_state.page = "Login"
 
 elif st.session_state.page == "Dashboard":
-    st.title("GitHub Leaderboard - Dashboard")
+    st.title("Git Leaderboard ")
 
     # Fetch scores and leaderboard data
     try:
